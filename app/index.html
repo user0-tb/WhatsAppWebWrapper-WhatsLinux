@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>WhatsApp Web</title>
+  </head>
+  <body>
+    <style>
+      blink {
+        animation: blinker 0.6s linear infinite;
+        color: #1c87c9;
+       }
+      @keyframes blinker {  
+        50% { opacity: 0; }
+       }
+       .blink-one {
+         animation: blinker-one 0.01s linear infinite;
+       }
+       @keyframes blinker-one {  
+         0% { opacity: 0; }
+       }
+       .blink-two {
+         animation: blinker-two 1.4s linear infinite;
+       }
+       @keyframes blinker-two {  
+         100% { opacity: 0; }
+       }
+    </style>
+    <span class="blink-one">WhatsApp loading....</span>
+    <meta http-equiv="Refresh" content="0; url='https://web.whatsapp.com'" />
+    <img src="loading.gif" alt="loading">
+</script>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>

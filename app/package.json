@@ -1,0 +1,9 @@
+{
+  "name": "WhatsAppWebWrapper",
+  "version": "1.1.0",
+  "description": "A minimal Electron WhatsApp Wrapper",
+  "icon": "logo-small.png",
+  "main": "main.js",
+  "repository": "https://github.com/electron/electron-quick-start",
+  "license": "CC0-1.0"
+}
